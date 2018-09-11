@@ -19,6 +19,8 @@ import {
   TSDBuilder
 } from "./definitions";
 
+import * as AST from './ast';
+
 import {
   DiagnosticMessage,
   DiagnosticCategory,
@@ -169,3 +171,6 @@ export function buildTSD(program: Program): string {
 
 /** Prefix indicating a library file. */
 export { LIBRARY_PREFIX } from "./common";
+
+/** Expose AST for use in custom transforms. **/
+export { AST };

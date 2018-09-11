@@ -112,10 +112,11 @@ exports.compileString = (sources, options) => {
   exports.main(argv.concat(Object.keys(sources)), {
     stdout: output.stdout,
     stderr: output.stderr,
-    readFile: name => sources.hasOwnProperty(name) ? sources[name] : null,
+    readFile: name => sources["input.ts"],
     writeFile: (name, contents) => output[name] = contents,
     listFiles: () => []
   });
+
   return output;
 }
 
