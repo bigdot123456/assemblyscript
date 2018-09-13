@@ -170,7 +170,7 @@ export function buildTSD(program: Program): string {
 }
 
 /** Prefix indicating a library file. */
-export { LIBRARY_PREFIX } from "./common";
+export { LIBRARY_PREFIX, CommonFlags } from "./common";
 
 /** Expose AST for use in custom transforms. **/
 export { AST };
